@@ -44,7 +44,6 @@
 <body class="bg-amber-50/20 text-slate-800 antialiased">
 
 <!-- ===================== NAV ===================== -->
-<!-- ===================== NAV ===================== -->
 <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-amber-200/60 shadow-sm">
   <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between w-full h-16">
@@ -89,7 +88,7 @@
         </p>
 
         <div class="mt-6 flex flex-wrap justify-center sm:justify-start gap-3">
-          <a href="https://github.com/PintorMurilloJauhdielOmar" target="_blank" class="rounded-lg bg-white text-slate-900 font-semibold px-4 py-2 text-sm hover:bg-amber-50 transition shadow">GitHub</a>
+          <a href="https://github.com/PintorMurilloJauhdielOmar" target="_blank" rel="noopener noreferrer" class="rounded-lg bg-white text-slate-900 font-semibold px-4 py-2 text-sm hover:bg-amber-50 transition shadow">GitHub</a>
           <a href="#entregas" class="rounded-lg bg-brand-600 text-white font-semibold px-4 py-2 text-sm hover:bg-brand-500 transition shadow">Ver mis entregas →</a>
         </div>
       </div>
@@ -136,30 +135,114 @@
 </section>
 
 <!-- ===================== ENTREGAS POR UNIDAD ===================== -->
-<section id="entregas" class="bg-slate-900 text-white">
+<section id="entregas" class="bg-slate-950 text-white">
   <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
     <p class="text-brand-400 font-bold text-xs uppercase tracking-wider">Evidencia por unidad</p>
     <h2 class="text-2xl sm:text-3xl font-extrabold mt-1">Mis 4 entregas publicadas</h2>
-    <p class="mt-3 text-slate-300 max-w-2xl">Cada enlace lleva a la versión pública que entregué al cerrar esa Unidad, sobre el mismo proyecto.</p>
+    <p class="mt-2 text-slate-400 text-sm max-w-2xl mb-8">
+      Cada enlace lleva a la versión pública que entregué al cerrar esa Unidad, sobre el mismo proyecto.
+    </p>
 
-    <ul class="mt-8 grid sm:grid-cols-2 gap-4">
-      <li class="rounded-xl bg-slate-800/80 border border-slate-700 p-5 hover:border-brand-500 transition">
-        <p class="text-xs font-bold text-orange-400 uppercase">Unidad 1</p>
-        <p class="font-semibold mt-1">Portafolio estático (HTML + Tailwind)</p>
-      </li>
-      <li class="rounded-xl bg-slate-800/80 border border-slate-700 p-5 hover:border-brand-500 transition">
-        <p class="text-xs font-bold text-emerald-400 uppercase">Unidad 2</p>
-        <p class="font-semibold mt-1">App Django + MySQL en Render</p>
-      </li>
-      <li class="rounded-xl bg-slate-800/80 border border-slate-700 p-5 hover:border-brand-500 transition">
-        <p class="text-xs font-bold text-sky-400 uppercase">Unidad 3</p>
-        <p class="font-semibold mt-1">CRUD dinámico con login y sesiones</p>
-      </li>
-      <li class="rounded-xl bg-slate-800/80 border border-slate-700 p-5 hover:border-brand-500 transition">
-        <p class="text-xs font-bold text-brand-400 uppercase">Unidad 4</p>
-        <p class="font-semibold mt-1">Proyecto integrador final</p>
-      </li>
-    </ul>
+    <!-- Grid de Unidades -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <!-- UNIDAD 1 -->
+      <div class="bg-[#111827] border border-slate-800 rounded-2xl p-6 shadow-xl flex flex-col justify-between">
+        <div>
+          <p class="text-xs font-bold text-orange-400 uppercase tracking-wider">Unidad 1</p>
+          <h3 class="text-lg font-bold text-white mt-1">Portafolio estático (HTML + Tailwind)</h3>
+          
+          <div class="border-b border-slate-800 my-4"></div>
+
+          <p class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-3">Prácticas:</p>
+          
+          <div class="space-y-2">
+            <!-- Práctica 1 -->
+            <div class="bg-slate-900/90 border border-slate-800 rounded-lg p-3 flex items-center justify-between text-sm">
+              <span class="font-medium text-slate-200">Práctica 1</span>
+              <div class="flex items-center gap-3 text-xs">
+                <a href="https://portafolio-pmjo3.onrender.com" target="_blank" rel="noopener noreferrer" class="text-indigo-400 hover:text-indigo-300 hover:underline">ver en render</a>
+                <a href="https://github.com/PintorMurilloJauhdielOmar" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-slate-200 hover:underline">ver en github</a>
+              </div>
+            </div>
+
+            <!-- Práctica 2 -->
+            <div class="bg-slate-900/90 border border-slate-800 rounded-lg p-3 flex items-center justify-between text-sm">
+              <span class="font-medium text-slate-200">Práctica 2</span>
+              <div class="flex items-center gap-3 text-xs">
+                <a href="https://ine-personal-pmjo5.onrender.com" target="_blank" rel="noopener noreferrer" class="text-indigo-400 hover:text-indigo-300 hover:underline">ver en render</a>
+                <a href="https://github.com/PintorMurilloJauhdielOmar" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-slate-200 hover:underline">ver en github</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- UNIDAD 2 -->
+      <div class="bg-[#111827] border border-slate-800 rounded-2xl p-6 shadow-xl flex flex-col justify-between">
+        <div>
+          <p class="text-xs font-bold text-emerald-400 uppercase tracking-wider">Unidad 2</p>
+          <h3 class="text-lg font-bold text-white mt-1">App Django + MySQL en Render</h3>
+          
+          <div class="border-b border-slate-800 my-4"></div>
+
+          <p class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-3">Prácticas:</p>
+          
+          <div class="space-y-2">
+            <!-- Práctica 1 -->
+            <div class="bg-slate-900/90 border border-slate-800 rounded-lg p-3 flex items-center justify-between text-sm">
+              <span class="font-medium text-slate-200">Práctica 1</span>
+              <div class="flex items-center gap-3 text-xs">
+                <a href="TU_LINK_GITHUB_U2_P1" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-slate-200 hover:underline">ver en github</a>
+              </div>
+            </div>
+
+            <!-- Práctica 2 -->
+            <div class="bg-slate-900/90 border border-slate-800 rounded-lg p-3 flex items-center justify-between text-sm">
+              <span class="font-medium text-slate-200">Práctica 2</span>
+              <span class="text-xs text-slate-500 font-medium">Próximamente</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- UNIDAD 3 -->
+      <div class="bg-[#111827] border border-slate-800 rounded-2xl p-6 shadow-xl flex flex-col justify-between">
+        <div>
+          <p class="text-xs font-bold text-purple-400 uppercase tracking-wider">Unidad 3</p>
+          <h3 class="text-lg font-bold text-white mt-1">CRUD Dinámico y Sesiones</h3>
+          
+          <div class="border-b border-slate-800 my-4"></div>
+
+          <p class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-3">Prácticas:</p>
+          
+          <div class="space-y-2">
+            <!-- Práctica 1 -->
+            <div class="bg-slate-900/90 border border-slate-800 rounded-lg p-3 flex items-center justify-between text-sm">
+              <span class="font-medium text-slate-200">Práctica 1</span>
+              <div class="flex items-center gap-3 text-xs">
+                <a href="TU_LINK_RENDER_U3_P1" target="_blank" rel="noopener noreferrer" class="text-indigo-400 hover:text-indigo-300 hover:underline">ver en render</a>
+                <a href="TU_LINK_GITHUB_U3_P1" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-slate-200 hover:underline">ver en github</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- UNIDAD 4 -->
+      <div class="bg-[#111827] border border-slate-800 rounded-2xl p-6 shadow-xl flex flex-col justify-between">
+        <div>
+          <p class="text-xs font-bold text-brand-400 uppercase tracking-wider">Unidad 4</p>
+          <h3 class="text-lg font-bold text-white mt-1">Proyecto integrador final</h3>
+          
+          <div class="mt-6 text-xs text-slate-500 space-y-1">
+            <p>ver en render: <span class="text-slate-500 font-medium">próximamente</span></p>
+            <p>ver en github: <span class="text-slate-500 font-medium">próximamente</span></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
@@ -169,7 +252,7 @@
   <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Hablemos</h2>
   <div class="mt-6 flex flex-wrap gap-4 text-sm">
     <a href="mailto:jauhdiel04@gmail.com" class="rounded-lg border border-amber-200 bg-white px-4 py-2 font-semibold text-slate-700 hover:border-brand-500 hover:text-brand-600 transition shadow-sm">✉️ jauhdiel04@gmail.com</a>
-    <a href="https://github.com/PintorMurilloJauhdielOmar" target="_blank" class="rounded-lg border border-amber-200 bg-white px-4 py-2 font-semibold text-slate-700 hover:border-brand-500 hover:text-brand-600 transition shadow-sm">GitHub: PintorMurilloJauhdielOmar</a>
+    <a href="https://github.com/PintorMurilloJauhdielOmar" target="_blank" rel="noopener noreferrer" class="rounded-lg border border-amber-200 bg-white px-4 py-2 font-semibold text-slate-700 hover:border-brand-500 hover:text-brand-600 transition shadow-sm">GitHub: PintorMurilloJauhdielOmar</a>
   </div>
 </section>
 
